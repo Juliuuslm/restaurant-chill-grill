@@ -2,6 +2,7 @@
 
 import { MapPin, Clock, ChevronRight, Instagram, Twitter, Facebook, Flame } from "lucide-react";
 import { RESTAURANT_INFO, SOCIAL_LINKS } from "@/lib/constants";
+import Reveal from "@/components/ui/Reveal";
 
 const Footer = () => {
   const handleNewsletterSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -18,7 +19,8 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           {/* Brand Section */}
-          <div className="col-span-1 md:col-span-2">
+          <Reveal delay={0} direction="left">
+            <div className="col-span-1 md:col-span-2">
             <div className="text-3xl font-black tracking-tighter text-white flex items-center gap-2 mb-6">
               <Flame className="text-orange-500 fill-orange-500" />
               GRILL & CHILL.
@@ -54,36 +56,40 @@ const Footer = () => {
               ))}
             </div>
           </div>
+          </Reveal>
 
           {/* Location Section */}
-          <div>
-            <h4 className="text-white font-bold uppercase tracking-widest mb-6">
-              Encuéntranos
-            </h4>
-            <div className="space-y-4">
-              <div className="flex gap-3 text-neutral-400">
-                <MapPin
-                  className="text-orange-500 shrink-0"
-                  size={20}
-                />
-                <p>{RESTAURANT_INFO.address}</p>
-              </div>
-              <div className="flex gap-3 text-neutral-400">
-                <Clock
-                  className="text-orange-500 shrink-0"
-                  size={20}
-                />
-                <div>
-                  <p>Mar - Jue: {RESTAURANT_INFO.hours.weekday}</p>
-                  <p>Vie - Sab: {RESTAURANT_INFO.hours.friday}</p>
-                  <p>Dom: {RESTAURANT_INFO.hours.sunday}</p>
+          <Reveal delay={150} direction="up">
+            <div>
+              <h4 className="text-white font-bold uppercase tracking-widest mb-6">
+                Encuéntranos
+              </h4>
+              <div className="space-y-4">
+                <div className="flex gap-3 text-neutral-400">
+                  <MapPin
+                    className="text-orange-500 shrink-0"
+                    size={20}
+                  />
+                  <p>{RESTAURANT_INFO.address}</p>
+                </div>
+                <div className="flex gap-3 text-neutral-400">
+                  <Clock
+                    className="text-orange-500 shrink-0"
+                    size={20}
+                  />
+                  <div>
+                    <p>Mar - Jue: {RESTAURANT_INFO.hours.weekday}</p>
+                    <p>Vie - Sab: {RESTAURANT_INFO.hours.friday}</p>
+                    <p>Dom: {RESTAURANT_INFO.hours.sunday}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Reveal>
 
           {/* Newsletter Section */}
-          <div>
+          <Reveal delay={300} direction="up">
+            <div>
             <h4 className="text-white font-bold uppercase tracking-widest mb-6">
               Newsletter
             </h4>
@@ -105,7 +111,8 @@ const Footer = () => {
                 <ChevronRight className="text-white transition-all duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:scale-110" />
               </button>
             </form>
-          </div>
+            </div>
+          </Reveal>
         </div>
 
         {/* Bottom Bar */}

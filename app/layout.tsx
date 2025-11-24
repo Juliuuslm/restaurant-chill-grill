@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import LenisProvider from "@/components/providers/LenisProvider";
 import ScrollProgressIndicator from "@/components/ui/ScrollProgressIndicator";
+import CustomCursor from "@/components/ui/CustomCursor";
 
 export const metadata: Metadata = {
   title: "GRILL & CHILL | Hamburguesas y Hot Dogs Gourmet",
@@ -41,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className="bg-black font-sans selection:bg-orange-500 selection:text-white">
+        <CustomCursor />
         <ScrollProgressIndicator />
         <LenisProvider>
           {children}

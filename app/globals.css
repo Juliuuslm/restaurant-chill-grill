@@ -220,6 +220,154 @@ select {
   .pause {
     animation-play-state: paused !important;
   }
+
+  /* Enhanced Typography Hierarchy */
+  .heading-hero {
+    @apply text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.9];
+  }
+
+  .heading-xl {
+    @apply text-5xl md:text-6xl font-black tracking-tighter;
+  }
+
+  .heading-lg {
+    @apply text-4xl md:text-5xl font-bold tracking-tight;
+  }
+
+  .heading-md {
+    @apply text-3xl font-bold tracking-tight;
+  }
+
+  .heading-sm {
+    @apply text-2xl font-bold tracking-wide;
+  }
+
+  .text-label {
+    @apply text-xs font-bold uppercase tracking-[0.2em];
+  }
+
+  .text-body-large {
+    @apply text-lg leading-relaxed text-neutral-200;
+  }
+
+  .text-body-regular {
+    @apply text-base leading-relaxed text-neutral-300;
+  }
+
+  .text-body-small {
+    @apply text-sm leading-relaxed text-neutral-400;
+  }
+
+  /* Premium text effects */
+  .text-glow {
+    @apply text-white drop-shadow-[0_0_20px_rgba(249,115,22,0.3)];
+  }
+
+  .text-gradient-warm {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-500;
+  }
+
+  /* Spacing utilities */
+  .gap-tight {
+    @apply gap-2;
+  }
+
+  .gap-comfortable {
+    @apply gap-4;
+  }
+
+  .gap-spacious {
+    @apply gap-6;
+  }
+
+  .gap-generous {
+    @apply gap-8;
+  }
+
+  /* Enhanced shadow and glow utilities */
+  .shadow-card-light {
+    @apply shadow-[0_4px_6px_rgba(0,0,0,0.1)] hover:shadow-[0_10px_20px_rgba(0,0,0,0.15)] transition-shadow duration-300;
+  }
+
+  .shadow-card-dark {
+    @apply shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] transition-shadow duration-300;
+  }
+
+  .shadow-card-glow {
+    @apply shadow-[0_0_30px_rgba(249,115,22,0.1)] hover:shadow-[0_0_50px_rgba(249,115,22,0.2)] transition-shadow duration-500;
+  }
+
+  /* Border radius utilities */
+  .rounded-tight {
+    @apply rounded-lg;
+  }
+
+  .rounded-cozy {
+    @apply rounded-2xl;
+  }
+
+  .rounded-spacious {
+    @apply rounded-3xl;
+  }
+
+  .rounded-generous {
+    @apply rounded-full;
+  }
+
+  /* Backdrop blur utilities */
+  .backdrop-glow {
+    @apply backdrop-blur-md bg-black/30;
+  }
+
+  .backdrop-premium {
+    @apply backdrop-blur-lg bg-black/40 border border-white/10;
+  }
+
+  /* Focus state utilities for premium feel */
+  .focus-premium {
+    @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500;
+  }
+
+  /* Accessibility: High contrast focus for important elements */
+  .focus-glow {
+    @apply focus-visible:shadow-[0_0_20px_rgba(249,115,22,0.6)] focus-visible:outline-none;
+  }
+
+  /* Container widths for better content hierarchy */
+  .container-tight {
+    @apply max-w-sm mx-auto;
+  }
+
+  .container-normal {
+    @apply max-w-2xl mx-auto;
+  }
+
+  .container-spacious {
+    @apply max-w-4xl mx-auto;
+  }
+
+  /* Premium list styles */
+  .list-premium li {
+    @apply flex items-center gap-3;
+  }
+
+  .list-premium li::before {
+    content: '';
+    @apply w-2 h-2 bg-orange-500 rounded-full flex-shrink-0;
+  }
+
+  /* Divider utilities */
+  .divider-subtle {
+    @apply border-white/5;
+  }
+
+  .divider-medium {
+    @apply border-white/10;
+  }
+
+  .divider-strong {
+    @apply border-white/20;
+  }
 }
 
 /* Custom keyframe animations */
