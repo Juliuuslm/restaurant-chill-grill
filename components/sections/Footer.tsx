@@ -7,7 +7,6 @@ import Reveal from "@/components/ui/Reveal";
 const Footer = () => {
   const handleNewsletterSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Add newsletter functionality here
     alert("¡Gracias por suscribirse!");
   };
 
@@ -21,41 +20,36 @@ const Footer = () => {
           {/* Brand Section */}
           <Reveal delay={0} direction="left">
             <div className="col-span-1 md:col-span-2">
-            <div className="text-3xl font-black tracking-tighter text-white flex items-center gap-2 mb-6">
-              <Flame className="text-orange-500 fill-orange-500" />
-              GRILL & CHILL.
+              <div className="text-3xl font-black tracking-tighter text-white flex items-center gap-2 mb-6">
+                <Flame className="text-orange-500 fill-orange-500" />
+                GRILL & CHILL.
+              </div>
+              <p className="text-neutral-400 max-w-sm mb-6">
+                No somos solo hamburguesas, somos una declaración de principios.
+                Calidad obsesiva, ambiente oscuro y sabores que explotan.
+              </p>
+              <div className="flex gap-4">
+                {[
+                  { Icon: Instagram, href: SOCIAL_LINKS.instagram, label: "Instagram", delay: 0 },
+                  { Icon: Twitter, href: SOCIAL_LINKS.twitter, label: "Twitter", delay: 50 },
+                  { Icon: Facebook, href: SOCIAL_LINKS.facebook, label: "Facebook", delay: 100 },
+                ].map(({ Icon, href, label, delay }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative w-10 h-10 rounded-full flex items-center justify-center text-white transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:scale-125 hover:rotate-12"
+                    aria-label={label}
+                    style={{ animationDelay: `${delay}ms` }}
+                  >
+                    <span className="absolute inset-0 rounded-full bg-orange-500 scale-0 group-hover:scale-100 transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] -z-10" />
+                    <span className="absolute inset-0 rounded-full bg-neutral-900 group-hover:bg-orange-500 transition-colors duration-300 -z-10" />
+                    <Icon size={18} className="transition-transform duration-300 group-hover:scale-110" />
+                  </a>
+                ))}
+              </div>
             </div>
-            <p className="text-neutral-400 max-w-sm mb-6">
-              No somos solo hamburguesas, somos una declaración de principios.
-              Calidad obsesiva, ambiente oscuro y sabores que explotan.
-            </p>
-            <div className="flex gap-4">
-              {[
-                { Icon: Instagram, href: SOCIAL_LINKS.instagram, label: "Instagram", delay: 0 },
-                { Icon: Twitter, href: SOCIAL_LINKS.twitter, label: "Twitter", delay: 50 },
-                { Icon: Facebook, href: SOCIAL_LINKS.facebook, label: "Facebook", delay: 100 },
-              ].map(({ Icon, href, label, delay }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative w-10 h-10 rounded-full flex items-center justify-center text-white transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:scale-125 hover:rotate-12"
-                  aria-label={label}
-                  style={{ animationDelay: `${delay}ms` }}
-                >
-                  {/* Animated background ring */}
-                  <span className="absolute inset-0 rounded-full bg-orange-500 scale-0 group-hover:scale-100 transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] -z-10" />
-
-                  {/* Static background */}
-                  <span className="absolute inset-0 rounded-full bg-neutral-900 group-hover:bg-orange-500 transition-colors duration-300 -z-10" />
-
-                  {/* Icon */}
-                  <Icon size={18} className="transition-transform duration-300 group-hover:scale-110" />
-                </a>
-              ))}
-            </div>
-          </div>
           </Reveal>
 
           {/* Location Section */}
@@ -90,27 +84,27 @@ const Footer = () => {
           {/* Newsletter Section */}
           <Reveal delay={300} direction="up">
             <div>
-            <h4 className="text-white font-bold uppercase tracking-widest mb-6">
-              Newsletter
-            </h4>
-            <p className="text-neutral-400 text-sm mb-4">
-              Recibe promos secretas.
-            </p>
-            <form onSubmit={handleNewsletterSubmit} className="flex group">
-              <input
-                type="email"
-                placeholder="Tu email..."
-                required
-                className="bg-neutral-900 border-none text-white px-4 py-2 w-full rounded-l-lg focus:ring-2 focus:ring-orange-500 outline-none transition-all duration-300"
-              />
-              <button
-                type="submit"
-                className="group/btn relative bg-orange-600 px-4 py-2 rounded-r-lg transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:bg-orange-500 hover:shadow-[0_0_20px_rgba(234,88,12,0.4)]"
-                aria-label="Subscribe"
-              >
-                <ChevronRight className="text-white transition-all duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:scale-110" />
-              </button>
-            </form>
+              <h4 className="text-white font-bold uppercase tracking-widest mb-6">
+                Newsletter
+              </h4>
+              <p className="text-neutral-400 text-sm mb-4">
+                Recibe promos secretas.
+              </p>
+              <form onSubmit={handleNewsletterSubmit} className="flex group">
+                <input
+                  type="email"
+                  placeholder="Tu email..."
+                  required
+                  className="bg-neutral-900 border-none text-white px-4 py-2 w-full rounded-l-lg focus:ring-2 focus:ring-orange-500 outline-none transition-all duration-300"
+                />
+                <button
+                  type="submit"
+                  className="group/btn relative bg-orange-600 px-4 py-2 rounded-r-lg transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:bg-orange-500 hover:shadow-[0_0_20px_rgba(234,88,12,0.4)]"
+                  aria-label="Subscribe"
+                >
+                  <ChevronRight className="text-white transition-all duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:scale-110" />
+                </button>
+              </form>
             </div>
           </Reveal>
         </div>
