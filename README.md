@@ -36,7 +36,6 @@ Una landing page premium para un restaurante de hamburguesas y hot dogs, constru
 - **Reveal**: Componente scroll-triggered con configurable delay y direction
 - **SpotlightCard**: Tarjetas con 3D tilt effect based on mouse position
 - **ScrollProgressIndicator**: Barra de progreso de scroll en la parte superior
-- **CustomCursor**: Cursor personalizado con effectos glow
 - **WhatsAppButton**: Botón flotante de WhatsApp con animaciones
 - **ImagePlaceholder**: Placeholders elegantes con mesh backgrounds animados
 
@@ -84,7 +83,6 @@ hamburguesas-chill-grill/
 │   ├── ui/                  # Componentes UI reutilizables
 │   │   ├── Reveal.tsx
 │   │   ├── SpotlightCard.tsx
-│   │   ├── CustomCursor.tsx
 │   │   ├── ScrollProgressIndicator.tsx
 │   │   ├── WhatsAppButton.tsx
 │   │   └── ImagePlaceholder.tsx
@@ -93,8 +91,7 @@ hamburguesas-chill-grill/
 ├── hooks/                   # Custom React hooks
 │   ├── useOnScreen.ts
 │   ├── useGSAPAnimation.ts
-│   ├── useLenis.ts
-│   └── useCustomCursor.ts
+│   └── useLenis.ts
 ├── lib/                     # Utilidades
 │   ├── constants.ts
 │   └── utils.ts
@@ -130,7 +127,6 @@ hamburguesas-chill-grill/
 - Clases de tipografía jerárquica
 - Spacing utilities (gap-tight, gap-comfortable, etc.)
 - Enhanced shadow and glow utilities
-- Custom cursor component
 - Footer con animaciones Reveal
 
 ### ✅ FASE 7: Testing & Documentation
