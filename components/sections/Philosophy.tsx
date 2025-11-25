@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Reveal from "@/components/ui/Reveal";
 
 const Philosophy = () => {
@@ -33,12 +34,14 @@ const Philosophy = () => {
         <Reveal direction="right">
           <div className="relative">
             <div className="absolute -inset-4 bg-orange-600/20 rounded-full blur-3xl" />
-            <div className="relative rounded-2xl shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700 overflow-hidden bg-neutral-800 h-96 flex items-center justify-center">
-              <div className="w-full h-full bg-gradient-to-br from-orange-500/20 to-yellow-600/20 flex items-center justify-center">
-                <div className="text-6xl font-black text-orange-500 opacity-30">
-                  👨‍🍳
-                </div>
-              </div>
+            <div className="relative rounded-2xl shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700 overflow-hidden bg-neutral-800 h-96">
+              <Image
+                src="/images/philosophy/philosophy.jpg"
+                alt="Chef - MASTERS OF FIRE"
+                fill
+                className="object-cover"
+                quality={85}
+              />
             </div>
           </div>
         </Reveal>

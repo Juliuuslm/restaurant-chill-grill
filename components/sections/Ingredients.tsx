@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { Star } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -125,8 +126,14 @@ const Ingredients = () => {
               ref={image1Ref}
               className="absolute top-0 right-0 z-10 w-2/3 will-change-transform"
             >
-              <div className="rounded-3xl shadow-depth-lg border-4 border-neutral-950 bg-gradient-to-br from-orange-500/20 to-yellow-600/20 h-64 flex items-center justify-center overflow-hidden hover:shadow-glow-lg transition-shadow duration-500">
-                <div className="text-6xl opacity-60 animate-float">🍖</div>
+              <div className="rounded-3xl shadow-depth-lg border-4 border-neutral-950 bg-gradient-to-br from-orange-500/20 to-yellow-600/20 h-64 overflow-hidden hover:shadow-glow-lg transition-shadow duration-500 relative">
+                <Image
+                  src="/images/ingredients/menu-ingre1.jpg"
+                  alt="Ingrediente Premium 1"
+                  fill
+                  className="object-cover"
+                  quality={85}
+                />
               </div>
             </div>
 
@@ -135,10 +142,14 @@ const Ingredients = () => {
               ref={image2Ref}
               className="absolute bottom-0 left-10 z-20 w-3/5 will-change-transform"
             >
-              <div className="rounded-3xl shadow-depth-lg border-4 border-neutral-950 bg-gradient-to-br from-green-500/20 to-emerald-600/20 h-64 flex items-center justify-center overflow-hidden hover:shadow-glow-lg transition-shadow duration-500">
-                <div className="text-6xl opacity-60 animate-float" style={{ animationDelay: "0.5s" }}>
-                  🍅
-                </div>
+              <div className="rounded-3xl shadow-depth-lg border-4 border-neutral-950 bg-gradient-to-br from-green-500/20 to-emerald-600/20 h-64 overflow-hidden hover:shadow-glow-lg transition-shadow duration-500 relative">
+                <Image
+                  src="/images/ingredients/menu-ingre2.jpg"
+                  alt="Ingrediente Premium 2"
+                  fill
+                  className="object-cover"
+                  quality={85}
+                />
               </div>
             </div>
           </div>

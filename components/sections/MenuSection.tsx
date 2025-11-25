@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import {
   ArrowRight,
   Flame,
@@ -33,24 +34,28 @@ const menuData: MenuData = {
       desc: "Doble smash ultra-crujiente, queso que gotea, cebolla caramelizada hasta el dulzor perfecto, nuestra salsa Chill secreta y pepinillos que crujen. Los bordes tostados son lo mejor.",
       price: "$12.50",
       tag: "BEST SELLER",
+      img: "/images/menu/hamburguesas/menu-ha1.jpg",
     },
     {
       name: "TRUFFLE MAKER",
       desc: "Doble carne jugosa, queso suizo fundido en cada capa, mayonesa de trufa negra que perfuma cada bocado, champiñones portobello asados hasta lo carnoso. Umami nivel experto.",
       price: "$15.00",
       tag: "PREMIUM",
+      img: "/images/menu/hamburguesas/menu-ha2.jpg",
     },
     {
       name: "SPICY INFERNO",
       desc: "Smash sellado en su propio jugo, jalapeños que pican progresivo, pepper jack fundido, salsa habanero-mango que equilibra fuego y dulce, bacon tan crujiente que se rompe. Pica rico, no te mata.",
       price: "$13.50",
       tag: "HOT",
+      img: "/images/menu/hamburguesas/menu-ha3.jpg",
     },
     {
       name: "CRISPY CHICK",
       desc: "Pollo marinado 24h en buttermilk, frito dorado con costra crocante, ensalada de col morada fresca que cruje, pepinillos ácidos, spicy mayo cremosa. Escuchas el crunch en cada mordida.",
       price: "$11.00",
       tag: "NEW",
+      img: "/images/menu/hamburguesas/menu-ha4.jpg",
     },
   ],
   hotdogs: [
@@ -59,24 +64,28 @@ const menuData: MenuData = {
       desc: "30cm de pura indulgencia: salchicha jumbo envuelta en bacon ahumado, cebolla grillada hasta lo caramelo, queso fundido que gotea por todos lados. Se necesitan dos manos.",
       price: "$10.50",
       tag: "BIG",
+      img: "/images/menu/hotdogs/menu-ho1.jpg",
     },
     {
       name: "CHILI CHEESE",
       desc: "Salchicha ahumada 8 horas, chili con carne hecho desde cero (cocción lenta 4 horas), queso cheddar rallado al momento que se funde con el calor, cebollino fresco que corta lo pesado. Comfort food serio.",
       price: "$11.00",
       tag: "CLASSIC",
+      img: "/images/menu/hotdogs/menu-ho2.jpg",
     },
     {
       name: "NYC STYLE",
       desc: "Straight from NYC: sauerkraut ácido que balancea, mostaza artesanal con especias secretas, salsa de cebolla caramelizada. Simple, honesto, perfecto. Como debe ser.",
       price: "$9.00",
       tag: "",
+      img: "/images/menu/hotdogs/menu-ho3.jpg",
     },
     {
       name: "AVOCADO DOG",
       desc: "Salchicha de pavo jugosa, guacamole machacado al momento (aguacates Hass maduros), pico de gallo fresco que explota en tu boca, crema agria fría, totopos que añaden ese crunch. Fresco y contundente.",
       price: "$12.00",
       tag: "FRESH",
+      img: "/images/menu/hotdogs/menu-ho4.jpg",
     },
   ],
   papas: [
@@ -85,24 +94,28 @@ const menuData: MenuData = {
       desc: "Papas corte fino extra-crujientes, rociadas con aceite de trufa blanca (el real, no ese aceite falso), parmesano Reggiano 24 meses rallado grueso, perejil fresco. Huele a lujo, sabe a adicción.",
       price: "$8.50",
       tag: "PREMIUM",
+      img: "/images/menu/papas/menu-pa1.jpg",
     },
     {
       name: "LOADED FRIES",
       desc: "Papas ahogadas en salsa de queso cheddar real (nada de Cheez Whiz), bacon crujiente en pedazos grandes, crema agria fría que contrasta, cebollín fresco. Un plato, tres texturas, cero arrepentimientos.",
       price: "$9.00",
       tag: "SHARE",
+      img: "/images/menu/papas/menu-pa2.jpg",
     },
     {
       name: "CAJUN SPIRAL",
       desc: "Papas en espiral doradas y crocantes, cubiertas con nuestra mezcla cajún secreta (picante, ahumada, ligeramente dulce). Cada curva atrapa más sabor. Adictivas nivel peligroso.",
       price: "$7.00",
       tag: "SPICY",
+      img: "/images/menu/papas/menu-pa3.jpg",
     },
     {
       name: "SWEET POTATO",
       desc: "Camote cortado grueso, frito hasta lo crujiente por fuera pero cremoso por dentro, dip de miel real con mostaza Dijon. El contraste dulce-ácido-picante que no sabías que necesitabas.",
       price: "$7.50",
       tag: "SWEET",
+      img: "/images/menu/papas/menu-pa4.jpg",
     },
   ],
   alitas: [
@@ -111,24 +124,28 @@ const menuData: MenuData = {
       desc: "Alitas fritas dos veces (extra crocantes), bañadas en salsa buffalo clásica: picante que pega, ácida que balancea, mantequilla que suaviza. Con blue cheese cremoso que apaga el fuego. Necesitas servilletas.",
       price: "$13.00",
       tag: "HOT",
+      img: "/images/menu/alitas/menu-ali1.jpg",
     },
     {
       name: "BBQ BOURBON",
       desc: "Glaseadas en salsa BBQ que hacemos cada mañana: reducción de bourbon real, miel oscura, toque ahumado. Se caramelizan al final para ese brillo pegajoso. Sweet, smoky, con un toque boozy.",
       price: "$13.00",
       tag: "SMOKY",
+      img: "/images/menu/alitas/menu-ali2.jpg",
     },
     {
       name: "MANGO HABANERO",
       desc: "Salsa de mango fresco que empieza dulce, tropical, inocente... hasta que el habanero te golpea. Fuego que sube gradual. Sudas, pero sigues comiendo. Ese es el punto.",
       price: "$13.50",
       tag: "SPICY",
+      img: "/images/menu/alitas/menu-ali3.jpg",
     },
     {
       name: "GARLIC PARM",
       desc: "Ajo asado 40 minutos hasta lo dulce y cremoso, mezclado con parmesano Reggiano real, mantequilla europea. Sin picante, puro umami. Las más adictivas para los que no buscan fuego.",
       price: "$13.00",
       tag: "",
+      img: "/images/menu/alitas/menu-ali4.jpg",
     },
   ],
   bebidas: [
@@ -137,24 +154,28 @@ const menuData: MenuData = {
       desc: "Cola real hecha desde cero: nuez de cola importada, vainilla de Madagascar, cítricos frescos, cero jarabe de maíz. Sabe a lo que la Coca-Cola debería saber. Carbonatada al momento.",
       price: "$4.50",
       tag: "ARTISAN",
+      img: "/images/menu/bebidas/menu-dri1.jpg",
     },
     {
       name: "MINT LEMONADE",
       desc: "Limones exprimidos a la orden, menta machacada que libera aceites esenciales, hielo picado fino, toque de azúcar de caña. Refrescante, herbácea, la cura perfecta para lo picante.",
       price: "$5.00",
       tag: "FRESH",
+      img: "/images/menu/bebidas/menu-dri2.jpg",
     },
     {
       name: "VANILLA SKY",
       desc: "Malteada tan espesa que necesitas popote extra ancho: helado premium, vainilla de Madagascar (ves las semillas), leche entera, crema batida REAL encima. Fría, cremosa, pecaminosamente buena.",
       price: "$7.00",
       tag: "SHAKE",
+      img: "/images/menu/bebidas/menu-dri3.jpg",
     },
     {
       name: "IPA DRAFT",
       desc: "IPA local de barril, siempre rotando: lúpulos cítricos que explotan en nariz, amargor presente pero balanceado, final limpio. Servida a 4°C exactos. Corta la grasa, limpia el paladar.",
       price: "$8.00",
       tag: "BEER",
+      img: "/images/menu/bebidas/menu-dri4.jpg",
     },
   ],
 };
@@ -235,12 +256,22 @@ const MenuSection = () => {
             >
               <SpotlightCard className="group h-full hover:shadow-[0_0_40px_-10px_rgba(234,88,12,0.3)] transition-shadow duration-500">
                 <div className="flex flex-col sm:flex-row h-full">
-                  {/* Image Placeholder */}
+                  {/* Product Image */}
                   <div className="sm:w-2/5 h-64 sm:h-auto overflow-hidden relative bg-neutral-950">
+                    {item.img ? (
+                      <Image
+                        src={item.img}
+                        alt={item.name}
+                        fill
+                        className="object-cover"
+                        quality={85}
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-orange-500/30 to-yellow-600/20 flex items-center justify-center text-6xl opacity-50">
+                        🍔
+                      </div>
+                    )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent sm:bg-gradient-to-r sm:from-transparent sm:via-transparent sm:to-black/50 z-20" />
-                    <div className="w-full h-full bg-gradient-to-br from-orange-500/30 to-yellow-600/20 flex items-center justify-center text-6xl opacity-50">
-                      🍔
-                    </div>
                     {item.tag && (
                       <span
                         className={`absolute top-4 left-4 z-30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg transform group-hover:translate-x-2 transition-transform duration-300 ${

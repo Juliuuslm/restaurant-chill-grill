@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -93,22 +94,32 @@ const Hero = () => {
         ref={bgRef}
         className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden"
       >
+        {/* Hero Background Image */}
+        <Image
+          src="/images/hero/hero.jpg"
+          alt="Hero Background"
+          fill
+          className="absolute inset-0 object-cover"
+          priority
+          quality={85}
+        />
+
         {/* Rotating orb with enhanced glow */}
-        <div className="w-[800px] h-[800px] md:w-[1200px] md:h-[1200px] rounded-full animate-spin-slow shadow-[0_0_120px_rgba(249,115,22,0.4)]">
+        <div className="relative w-[800px] h-[800px] md:w-[1200px] md:h-[1200px] rounded-full animate-spin-slow shadow-[0_0_120px_rgba(249,115,22,0.4)]">
           <div className="w-full h-full bg-gradient-to-br from-orange-600/30 via-orange-500/20 to-yellow-600/20 rounded-full backdrop-blur-sm" />
         </div>
 
         {/* Animated mesh background - adds depth */}
-        <div className="absolute top-0 left-0 w-full h-full">
+        <div className="relative top-0 left-0 w-full h-full">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500/20 rounded-full mix-blend-multiply filter blur-3xl animate-blob opacity-50"></div>
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-600/20 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000 opacity-40"></div>
           <div className="absolute -bottom-32 left-1/3 w-96 h-96 bg-yellow-500/10 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000 opacity-30"></div>
         </div>
 
         {/* Gradient overlays for depth */}
-        <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-neutral-950/30" />
-        <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/20 via-transparent to-neutral-950/80" />
-        <div className="absolute inset-0 bg-radial-gradient from-transparent to-neutral-950/60" />
+        <div className="relative inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-neutral-950/30" />
+        <div className="relative inset-0 bg-gradient-to-b from-neutral-950/20 via-transparent to-neutral-950/80" />
+        <div className="relative inset-0 bg-radial-gradient from-transparent to-neutral-950/60" />
       </div>
 
       {/* CONTENT */}
