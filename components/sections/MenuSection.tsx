@@ -255,7 +255,12 @@ const MenuSection = () => {
               direction="up"
             >
               <SpotlightCard className="group h-full hover:shadow-[0_0_40px_-10px_rgba(234,88,12,0.3)] transition-shadow duration-500">
-                <div className="flex flex-col sm:flex-row h-full">
+                <a
+                  href={generateWhatsAppLink(getWhatsAppMessage("MENU_ITEM", item.name))}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col sm:flex-row h-full cursor-pointer"
+                >
                   {/* Product Image */}
                   <div className="sm:w-2/5 h-64 sm:h-auto overflow-hidden relative bg-neutral-950">
                     {item.img ? (
@@ -306,21 +311,16 @@ const MenuSection = () => {
                           {item.price}
                         </span>
                       </div>
-                      <a
-                        href={generateWhatsAppLink(getWhatsAppMessage("MENU_ITEM", item.name))}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group/btn relative bg-white text-black w-12 h-12 rounded-full flex items-center justify-center transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] transform group-hover:scale-125 group-hover:-rotate-45"
-                      >
+                      <div className="group/btn relative bg-white text-black w-12 h-12 rounded-full flex items-center justify-center transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] transform group-hover:scale-125 group-hover:-rotate-45 pointer-events-none">
                         {/* Animated background */}
                         <span className="absolute inset-0 rounded-full bg-orange-600 scale-0 group-hover/btn:scale-100 transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]" />
 
                         {/* Icon */}
                         <ArrowRight size={24} strokeWidth={3} className="relative transition-all duration-300 group-hover/btn:translate-x-1" />
-                      </a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </SpotlightCard>
             </Reveal>
           ))}
