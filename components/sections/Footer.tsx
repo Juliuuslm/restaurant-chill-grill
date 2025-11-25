@@ -25,8 +25,7 @@ const Footer = () => {
                 GRILL & CHILL.
               </div>
               <p className="text-neutral-400 max-w-sm mb-6">
-                No somos solo hamburguesas, somos una declaración de principios.
-                Calidad obsesiva, ambiente oscuro y sabores que explotan.
+                No somos solo una burger joint. Somos el lugar donde el fuego, la técnica y los ingredientes reales se encuentran. Cada plato sale de una cocina que le pone corazón. Ven a probar la diferencia.
               </p>
               <div className="flex gap-4">
                 {[
@@ -88,7 +87,7 @@ const Footer = () => {
                 Newsletter
               </h4>
               <p className="text-neutral-400 text-sm mb-4">
-                Recibe promos secretas.
+                Ofertas secretas, nuevos platillos, eventos especiales. Directo a tu inbox.
               </p>
               <form onSubmit={handleNewsletterSubmit} className="flex group">
                 <input

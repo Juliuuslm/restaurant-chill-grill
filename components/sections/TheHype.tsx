@@ -43,7 +43,7 @@ const TheHype = () => {
           <div className="flex flex-col md:flex-row justify-between items-end mb-12">
             <div>
               <h2 className="text-orange-500 font-bold tracking-widest text-sm uppercase mb-3">
-                Community
+                Lo que dicen
               </h2>
               <h3 className="text-5xl md:text-7xl font-black text-white tracking-tighter">
                 THE HYPE

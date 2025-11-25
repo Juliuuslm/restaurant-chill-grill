@@ -11,15 +11,15 @@ gsap.registerPlugin(ScrollTrigger);
 const ingredients = [
   {
     title: "100% Black Angus",
-    desc: "Mezcla propia de cortes premium. Nunca congelada.",
+    desc: "Mezcla propia de chuck y brisket molidos diario. Ese marmoleado blanco que gotea cuando se cocina. Nunca congelada, nunca.",
   },
   {
     title: "Brioche Casero",
-    desc: "Horneado con mantequilla francesa, tostado al momento.",
+    desc: "Horneado cada mañana con mantequilla Francesa. Tostado en mantequilla antes de armar. Ese brioche dorado, esponjoso, ligeramente dulce que aguanta los jugos sin deshacerse.",
   },
   {
     title: "Quesos Importados",
-    desc: "Cheddar añejo y quesos suizos de verdad.",
+    desc: "Cheddar añejo 18 meses que se funde perfecto. Gruyère suizo importado. Pepper Jack artesanal. Queso REAL, no esas singles de plástico.",
   },
 ];
 

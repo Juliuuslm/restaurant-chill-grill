@@ -4,10 +4,10 @@ import Reveal from "@/components/ui/Reveal";
 
 const Philosophy = () => {
   const ingredients = [
-    "Carne Angus certificada",
-    "Salchichas artesanales",
-    "Salsas de la casa",
-    "Cerveza artesanal fría",
+    "Black Angus vetado - ese marmoleado que se derrite",
+    "Salchichas ahumadas 12 horas en madera de mezquite",
+    "Salsas hechas a diario - nunca de botella",
+    "Cerveza artesanal helada a -2°C - casi congelada, nunca aguada",
   ];
 
   return (
@@ -50,9 +50,7 @@ const Philosophy = () => {
               <span className="text-orange-500">FIRE</span>
             </h2>
             <p className="text-neutral-400 text-lg mb-6 leading-relaxed">
-              En Grill & Chill, el fuego es nuestro mejor ingrediente. Ya sea una
-              hamburguesa smash, un hot dog gourmet o unas alitas picantes, todo
-              pasa por un proceso riguroso de calidad y pasión.
+              El fuego lo cambia todo. Carameliza, sella, ahúma, transforma. Cada corte premium se marca a 400°C, sellando jugos por fuera, manteniéndolo tierno por dentro. Escuchas el sizzle. Hueles el ahumado. Lo sientes en cada bocado.
             </p>
             <ul className="space-y-4">
               {ingredients.map((item, i) => (

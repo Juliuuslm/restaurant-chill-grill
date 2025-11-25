@@ -133,7 +133,7 @@ const Hero = () => {
 
         <Reveal delay={400}>
           <p className="text-neutral-200 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 md:mb-12 font-light drop-shadow-lg leading-relaxed will-change-transform">
-            Más que comida, es un estado mental. Hamburguesas premium, hot dogs artesanos y el mejor ambiente.
+            Donde la parrilla canta y cada bocado cuenta una historia. Carne que gotea sabor, pan tostado que cruje, sabores que explotan en tu boca.
           </p>
         </Reveal>
 

@@ -6,7 +6,7 @@ import ScrollProgressIndicator from "@/components/ui/ScrollProgressIndicator";
 export const metadata: Metadata = {
   title: "GRILL & CHILL | Hamburguesas y Hot Dogs Gourmet",
   description:
-    "Más que comida, es un estado mental. Hamburguesas premium, hot dogs artesanos y el mejor ambiente.",
+    "Donde la parrilla canta y cada bocado cuenta una historia. Carne que gotea sabor, pan tostado que cruje, sabores que explotan en tu boca.",
   keywords: [
     "hamburguesas",
     "hot dogs",
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
     siteName: "GRILL & CHILL",
     title: "GRILL & CHILL | Hamburguesas y Hot Dogs Gourmet",
     description:
-      "Más que comida, es un estado mental. Hamburguesas premium, hot dogs artesanos y el mejor ambiente.",
+      "Donde la parrilla canta y cada bocado cuenta una historia. Carne que gotea sabor, pan tostado que cruje, sabores que explotan en tu boca.",
   },
   twitter: {
     card: "summary_large_image",
     title: "GRILL & CHILL",
     description:
-      "Más que comida, es un estado mental. Hamburguesas premium, hot dogs artesanos y el mejor ambiente.",
+      "Donde la parrilla canta y cada bocado cuenta una historia. Carne que gotea sabor, pan tostado que cruje, sabores que explotan en tu boca.",
   },
 };
 

@@ -31,25 +31,25 @@ const menuData: MenuData = {
   hamburguesas: [
     {
       name: "THE O.G. GRILL",
-      desc: "Doble smash burger, queso americano, cebolla caramelizada, salsa Chill, pepinillos.",
+      desc: "Doble smash ultra-crujiente, queso que gotea, cebolla caramelizada hasta el dulzor perfecto, nuestra salsa Chill secreta y pepinillos que crujen. Los bordes tostados son lo mejor.",
       price: "$12.50",
       tag: "BEST SELLER",
     },
     {
       name: "TRUFFLE MAKER",
-      desc: "Doble carne, queso suizo, mayonesa de trufa negra, champiñones portobello asados.",
+      desc: "Doble carne jugosa, queso suizo fundido en cada capa, mayonesa de trufa negra que perfuma cada bocado, champiñones portobello asados hasta lo carnoso. Umami nivel experto.",
       price: "$15.00",
       tag: "PREMIUM",
     },
     {
       name: "SPICY INFERNO",
-      desc: "Smash simple, jalapeños encurtidos, pepper jack, salsa habanero-mango, bacon crujiente.",
+      desc: "Smash sellado en su propio jugo, jalapeños que pican progresivo, pepper jack fundido, salsa habanero-mango que equilibra fuego y dulce, bacon tan crujiente que se rompe. Pica rico, no te mata.",
       price: "$13.50",
       tag: "HOT",
     },
     {
       name: "CRISPY CHICK",
-      desc: "Pollo frito en buttermilk, ensalada de col morada, pepinillos, spicy mayo.",
+      desc: "Pollo marinado 24h en buttermilk, frito dorado con costra crocante, ensalada de col morada fresca que cruje, pepinillos ácidos, spicy mayo cremosa. Escuchas el crunch en cada mordida.",
       price: "$11.00",
       tag: "NEW",
     },
@@ -57,25 +57,25 @@ const menuData: MenuData = {
   hotdogs: [
     {
       name: "THE BEAST DOG",
-      desc: "Salchicha Jumbo 30cm, envuelta en bacon, cebolla grillada y queso fundido.",
+      desc: "30cm de pura indulgencia: salchicha jumbo envuelta en bacon ahumado, cebolla grillada hasta lo caramelo, queso fundido que gotea por todos lados. Se necesitan dos manos.",
       price: "$10.50",
       tag: "BIG",
     },
     {
       name: "CHILI CHEESE",
-      desc: "Salchicha ahumada, chili con carne casero, queso cheddar rallado y cebollino.",
+      desc: "Salchicha ahumada 8 horas, chili con carne hecho desde cero (cocción lenta 4 horas), queso cheddar rallado al momento que se funde con el calor, cebollino fresco que corta lo pesado. Comfort food serio.",
       price: "$11.00",
       tag: "CLASSIC",
     },
     {
       name: "NYC STYLE",
-      desc: "La receta clásica de Nueva York: Sauerkraut, mostaza especiada y salsa de cebolla.",
+      desc: "Straight from NYC: sauerkraut ácido que balancea, mostaza artesanal con especias secretas, salsa de cebolla caramelizada. Simple, honesto, perfecto. Como debe ser.",
       price: "$9.00",
       tag: "",
     },
     {
       name: "AVOCADO DOG",
-      desc: "Salchicha de pavo, guacamole fresco, pico de gallo, crema agria y totopos.",
+      desc: "Salchicha de pavo jugosa, guacamole machacado al momento (aguacates Hass maduros), pico de gallo fresco que explota en tu boca, crema agria fría, totopos que añaden ese crunch. Fresco y contundente.",
       price: "$12.00",
       tag: "FRESH",
     },
@@ -83,25 +83,25 @@ const menuData: MenuData = {
   papas: [
     {
       name: "TRUFFLE PARM",
-      desc: "Papas francesas corte fino, aceite de trufa blanca, parmesano reggiano y perejil.",
+      desc: "Papas corte fino extra-crujientes, rociadas con aceite de trufa blanca (el real, no ese aceite falso), parmesano Reggiano 24 meses rallado grueso, perejil fresco. Huele a lujo, sabe a adicción.",
       price: "$8.50",
       tag: "PREMIUM",
     },
     {
       name: "LOADED FRIES",
-      desc: "Bañadas en salsa de queso cheddar, trozos de bacon crujiente, crema y cebollín.",
+      desc: "Papas ahogadas en salsa de queso cheddar real (nada de Cheez Whiz), bacon crujiente en pedazos grandes, crema agria fría que contrasta, cebollín fresco. Un plato, tres texturas, cero arrepentimientos.",
       price: "$9.00",
       tag: "SHARE",
     },
     {
       name: "CAJUN SPIRAL",
-      desc: "Papas curly sazonadas con nuestra mezcla secreta de especias cajún.",
+      desc: "Papas en espiral doradas y crocantes, cubiertas con nuestra mezcla cajún secreta (picante, ahumada, ligeramente dulce). Cada curva atrapa más sabor. Adictivas nivel peligroso.",
       price: "$7.00",
       tag: "SPICY",
     },
     {
       name: "SWEET POTATO",
-      desc: "Camote frito crujiente servido con un dip de miel y mostaza.",
+      desc: "Camote cortado grueso, frito hasta lo crujiente por fuera pero cremoso por dentro, dip de miel real con mostaza Dijon. El contraste dulce-ácido-picante que no sabías que necesitabas.",
       price: "$7.50",
       tag: "SWEET",
     },
@@ -109,25 +109,25 @@ const menuData: MenuData = {
   alitas: [
     {
       name: "BUFFALO SOLDIER",
-      desc: "Nuestra salsa buffalo clásica. Picante, avinagrada y adictiva. Con blue cheese.",
+      desc: "Alitas fritas dos veces (extra crocantes), bañadas en salsa buffalo clásica: picante que pega, ácida que balancea, mantequilla que suaviza. Con blue cheese cremoso que apaga el fuego. Necesitas servilletas.",
       price: "$13.00",
       tag: "HOT",
     },
     {
       name: "BBQ BOURBON",
-      desc: "Glaseadas con salsa BBQ casera hecha con reducción de Bourbon y miel.",
+      desc: "Glaseadas en salsa BBQ que hacemos cada mañana: reducción de bourbon real, miel oscura, toque ahumado. Se caramelizan al final para ese brillo pegajoso. Sweet, smoky, con un toque boozy.",
       price: "$13.00",
       tag: "SMOKY",
     },
     {
       name: "MANGO HABANERO",
-      desc: "El equilibrio perfecto entre dulce tropical y fuego intenso.",
+      desc: "Salsa de mango fresco que empieza dulce, tropical, inocente... hasta que el habanero te golpea. Fuego que sube gradual. Sudas, pero sigues comiendo. Ese es el punto.",
       price: "$13.50",
       tag: "SPICY",
     },
     {
       name: "GARLIC PARM",
-      desc: "Salsa cremosa de ajo asado y queso parmesano. Sin picante, todo sabor.",
+      desc: "Ajo asado 40 minutos hasta lo dulce y cremoso, mezclado con parmesano Reggiano real, mantequilla europea. Sin picante, puro umami. Las más adictivas para los que no buscan fuego.",
       price: "$13.00",
       tag: "",
     },
@@ -135,25 +135,25 @@ const menuData: MenuData = {
   bebidas: [
     {
       name: "CRAFT COLA",
-      desc: "Refresco de cola artesanal con nuez de cola real, vainilla y cítricos.",
+      desc: "Cola real hecha desde cero: nuez de cola importada, vainilla de Madagascar, cítricos frescos, cero jarabe de maíz. Sabe a lo que la Coca-Cola debería saber. Carbonatada al momento.",
       price: "$4.50",
       tag: "ARTISAN",
     },
     {
       name: "MINT LEMONADE",
-      desc: "Limonada recién exprimida con mucha menta fresca y hielo picado.",
+      desc: "Limones exprimidos a la orden, menta machacada que libera aceites esenciales, hielo picado fino, toque de azúcar de caña. Refrescante, herbácea, la cura perfecta para lo picante.",
       price: "$5.00",
       tag: "FRESH",
     },
     {
       name: "VANILLA SKY",
-      desc: "Malteada espesa de vainilla de Madagascar con crema batida real.",
+      desc: "Malteada tan espesa que necesitas popote extra ancho: helado premium, vainilla de Madagascar (ves las semillas), leche entera, crema batida REAL encima. Fría, cremosa, pecaminosamente buena.",
       price: "$7.00",
       tag: "SHAKE",
     },
     {
       name: "IPA DRAFT",
-      desc: "Cerveza artesanal IPA local. Notas cítricas y amargor equilibrado.",
+      desc: "IPA local de barril, siempre rotando: lúpulos cítricos que explotan en nariz, amargor presente pero balanceado, final limpio. Servida a 4°C exactos. Corta la grasa, limpia el paladar.",
       price: "$8.00",
       tag: "BEER",
     },
