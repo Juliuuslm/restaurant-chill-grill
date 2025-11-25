@@ -104,22 +104,24 @@ const Hero = () => {
           quality={85}
         />
 
+        {/* Overlay base para garantizar contraste de texto */}
+        <div className="absolute inset-0 bg-neutral-950/30 z-[1]" />
+
         {/* Rotating orb with enhanced glow */}
-        <div className="relative w-[800px] h-[800px] md:w-[1200px] md:h-[1200px] rounded-full animate-spin-slow shadow-[0_0_120px_rgba(249,115,22,0.4)]">
-          <div className="w-full h-full bg-gradient-to-br from-orange-600/30 via-orange-500/20 to-yellow-600/20 rounded-full backdrop-blur-sm" />
+        <div className="relative w-[800px] h-[800px] md:w-[1200px] md:h-[1200px] rounded-full animate-spin-slow shadow-[0_0_120px_rgba(249,115,22,0.3)]">
+          <div className="w-full h-full bg-gradient-to-br from-orange-600/15 via-orange-500/10 to-yellow-600/10 rounded-full backdrop-blur-sm" />
         </div>
 
         {/* Animated mesh background - adds depth */}
         <div className="relative top-0 left-0 w-full h-full">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500/20 rounded-full mix-blend-multiply filter blur-3xl animate-blob opacity-50"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-600/20 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000 opacity-40"></div>
-          <div className="absolute -bottom-32 left-1/3 w-96 h-96 bg-yellow-500/10 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000 opacity-30"></div>
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500/15 rounded-full mix-blend-multiply filter blur-3xl animate-blob opacity-35"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-600/15 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000 opacity-25"></div>
+          <div className="absolute -bottom-32 left-1/3 w-96 h-96 bg-yellow-500/8 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000 opacity-20"></div>
         </div>
 
-        {/* Gradient overlays for depth */}
-        <div className="relative inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-neutral-950/30" />
-        <div className="relative inset-0 bg-gradient-to-b from-neutral-950/20 via-transparent to-neutral-950/80" />
-        <div className="relative inset-0 bg-radial-gradient from-transparent to-neutral-950/60" />
+        {/* Gradient overlays for depth - FIXED */}
+        <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-neutral-950/30 z-[2]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/20 via-transparent to-neutral-950/80 z-[2]" />
       </div>
 
       {/* CONTENT */}
@@ -134,16 +136,16 @@ const Hero = () => {
         </Reveal>
 
         <Reveal delay={200}>
-          <h1 className="hero-title text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.9] mb-6 md:mb-8 drop-shadow-2xl will-change-transform">
+          <h1 className="hero-title text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.9] mb-6 md:mb-8 will-change-transform [text-shadow:_0_2px_8px_rgb(0_0_0_/_90%),_0_4px_16px_rgb(0_0_0_/_70%)]">
             GRILL <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-500 animate-pulse-slow">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-500 animate-pulse-slow [filter:_drop-shadow(0_2px_8px_rgb(0_0_0_/_100%))_drop-shadow(0_4px_16px_rgb(0_0_0_/_80%))]">
               & CHILL.
             </span>
           </h1>
         </Reveal>
 
         <Reveal delay={400}>
-          <p className="text-neutral-200 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 md:mb-12 font-light drop-shadow-lg leading-relaxed will-change-transform">
+          <p className="text-neutral-200 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 md:mb-12 font-light leading-relaxed will-change-transform [text-shadow:_0_2px_12px_rgb(0_0_0_/_100%),_0_4px_20px_rgb(0_0_0_/_80%)]">
             Donde la parrilla canta y cada bocado cuenta una historia. Carne que gotea sabor, pan tostado que cruje, sabores que explotan en tu boca.
           </p>
         </Reveal>
