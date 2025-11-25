@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import {
-  ChevronRight,
   ArrowRight,
   Flame,
   Utensils,
@@ -294,22 +293,6 @@ const MenuSection = () => {
               </SpotlightCard>
             </Reveal>
           ))}
-        </div>
-
-        <div className="text-center mt-16">
-          <button className="group relative px-8 py-3 overflow-hidden rounded-full bg-transparent text-white border border-white/30 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:border-orange-500 hover:shadow-[0_0_30px_rgba(234,88,12,0.3)]">
-            {/* Animated gradient background */}
-            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-orange-600/0 via-orange-600/5 to-orange-600/0 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center" />
-
-            {/* Shine effect */}
-            <span className="absolute inset-0 w-full h-full -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
-
-            {/* Content */}
-            <span className="relative font-bold tracking-widest text-sm uppercase flex items-center gap-2">
-              Ver menú completo
-              <ChevronRight className="w-4 h-4 transition-all duration-300 group-hover:translate-x-2 group-hover:scale-125" />
-            </span>
-          </button>
         </div>
       </div>
     </section>
