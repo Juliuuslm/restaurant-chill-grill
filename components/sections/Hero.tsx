@@ -108,7 +108,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-neutral-950/30 z-[1]" />
 
         {/* Rotating orb with enhanced glow */}
-        <div className="relative w-[800px] h-[800px] md:w-[1200px] md:h-[1200px] rounded-full animate-spin-slow shadow-[0_0_120px_rgba(249,115,22,0.3)]">
+        <div className="relative w-[800px] h-[800px] md:w-[1200px] md:h-[1200px] rounded-full animate-pulse-glow shadow-[0_0_120px_rgba(249,115,22,0.3)]">
           <div className="w-full h-full bg-gradient-to-br from-orange-600/15 via-orange-500/10 to-yellow-600/10 rounded-full backdrop-blur-sm" />
         </div>
 
@@ -138,7 +138,7 @@ const Hero = () => {
         <Reveal delay={200}>
           <h1 className="hero-title text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.9] mb-6 md:mb-8 will-change-transform [text-shadow:_0_2px_8px_rgb(0_0_0_/_90%),_0_4px_16px_rgb(0_0_0_/_70%)]">
             GRILL <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-500 animate-pulse-slow [filter:_drop-shadow(0_2px_8px_rgb(0_0_0_/_100%))_drop-shadow(0_4px_16px_rgb(0_0_0_/_80%))]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-500 [filter:_drop-shadow(0_2px_8px_rgb(0_0_0_/_100%))_drop-shadow(0_4px_16px_rgb(0_0_0_/_80%))]">
               & CHILL.
             </span>
           </h1>
