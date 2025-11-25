@@ -107,9 +107,9 @@ const Hero = () => {
         {/* Overlay base para garantizar contraste de texto */}
         <div className="absolute inset-0 bg-neutral-950/30 z-[1]" />
 
-        {/* Rotating orb with enhanced glow */}
-        <div className="relative w-[800px] h-[800px] md:w-[1200px] md:h-[1200px] rounded-full animate-pulse-glow shadow-[0_0_120px_rgba(249,115,22,0.3)]">
-          <div className="w-full h-full bg-gradient-to-br from-orange-600/15 via-orange-500/10 to-yellow-600/10 rounded-full backdrop-blur-sm" />
+        {/* Radial spotlight effect - subtle center glow */}
+        <div className="absolute inset-0 z-[1]">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-radial from-orange-500/5 via-orange-600/2 to-transparent animate-pulse-glow opacity-60" />
         </div>
 
         {/* Animated mesh background - adds depth */}
