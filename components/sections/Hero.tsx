@@ -171,7 +171,7 @@ const Hero = () => {
               href={generateWhatsAppLink(getWhatsAppMessage("RESERVATION"))}
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-8 py-4 rounded-full font-bold text-base sm:text-lg text-white border-2 border-white/50 hover:border-white hover:bg-white hover:text-neutral-900 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] backdrop-blur-md"
+              className="group px-8 py-4 rounded-full font-bold text-base sm:text-lg text-white border-2 border-white/50 hover:border-white hover:bg-orange-600 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] backdrop-blur-md hover:shadow-[0_0_15px_rgba(234,88,12,0.3)]"
             >
               RESERVAR MESA
             </a>
