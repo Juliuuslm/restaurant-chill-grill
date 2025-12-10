@@ -1,5 +1,5 @@
 // WhatsApp configuration
-export const WHATSAPP_PHONE = "5255745333388"; // Número de WhatsApp sin el + inicial
+export const WHATSAPP_PHONE = "557453388"; // Número de WhatsApp sin el + inicial
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}`;
 
 // WhatsApp messages for different CTAs
