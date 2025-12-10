@@ -109,9 +109,10 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-neutral-900 pt-8 flex flex-col md:flex-row justify-between items-center text-neutral-600 text-sm">
-          <p>© {RESTAURANT_INFO.year} GRILL & CHILL. Todos los derechos reservados.</p>
-          <div className="flex gap-6 mt-4 md:mt-0">
+        <div className="border-t border-neutral-900 pt-8 flex flex-col items-center gap-6 text-center text-neutral-500 text-sm">
+          <p>Built with love and AI.</p>
+          <p>Copyright © {RESTAURANT_INFO.year} GRILL & CHILL. Built with love and AI by <span className="text-orange-500 font-semibold">aurora33</span></p>
+          <div className="flex gap-6">
             <a
               href="#"
               className="hover:text-white transition-colors"
