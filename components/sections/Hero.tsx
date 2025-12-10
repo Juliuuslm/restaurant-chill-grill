@@ -133,11 +133,9 @@ const Hero = () => {
         ref={contentRef}
         className="container mx-auto px-6 relative z-10 text-center will-change-transform"
       >
-        <Reveal direction="down">
-          <span className="hero-label inline-block py-2 px-4 border border-orange-400 rounded-full text-orange-400 text-xs font-bold tracking-[0.2em] mb-8 uppercase bg-orange-500/15 backdrop-blur-sm hover:bg-orange-500/20 hover:border-orange-300 transition-all duration-300 will-change-transform shadow-[0_0_10px_rgba(251,146,60,0.2)]">
-            Est. 2024 - Grill & Chill
-          </span>
-        </Reveal>
+        <span className="hero-label inline-block py-2 px-4 border border-orange-400 rounded-full text-orange-400 text-xs font-bold tracking-[0.2em] mb-8 uppercase bg-orange-500/15 backdrop-blur-sm hover:bg-orange-500/20 hover:border-orange-300 transition-all duration-300 will-change-transform shadow-[0_0_10px_rgba(251,146,60,0.2)] animate-slide-down">
+          Est. 2024 - Grill & Chill
+        </span>
 
         <Reveal delay={200}>
           <h1 className="hero-title text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.9] mb-6 md:mb-8 will-change-transform [text-shadow:_0_2px_8px_rgb(0_0_0_/_90%),_0_4px_16px_rgb(0_0_0_/_70%)]">
