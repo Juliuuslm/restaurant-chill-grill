@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Grill & Chill" }],
   creator: "Grill & Chill",
+  icons: {
+    icon: "/favicon/favicon-grill-chill.png",
+    shortcut: "/favicon/favicon-grill-chill.png",
+    apple: "/favicon/favicon-grill-chill.png",
+  },
   openGraph: {
     type: "website",
     locale: "es_MX",
