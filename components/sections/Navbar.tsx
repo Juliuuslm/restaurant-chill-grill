@@ -20,18 +20,29 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      // Track active section
+      // Track active section - find which section is most visible in viewport
       const sections = navItems.map((item) => item.href.slice(1));
+      let activeSectionId = "";
+      let smallestDistance = Infinity;
+
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
         if (el) {
           const rect = el.getBoundingClientRect();
-          // If section is in viewport (with offset for navbar)
-          if (rect.top <= 100 && rect.bottom > 100) {
-            setActiveSection(sectionId);
-            break;
+          // If section is visible in viewport (partially or fully)
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            // Find which section is closest to the viewport top (accounting for navbar offset)
+            const distance = Math.abs(rect.top - 100);
+            if (distance < smallestDistance) {
+              smallestDistance = distance;
+              activeSectionId = sectionId;
+            }
           }
         }
+      }
+
+      if (activeSectionId) {
+        setActiveSection(activeSectionId);
       }
     };
 
@@ -43,7 +54,9 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-black/90 backdrop-blur-md py-4" : "bg-transparent py-6"
+        scrolled
+          ? "bg-black/90 backdrop-blur-md py-4"
+          : "bg-gradient-to-b from-black/80 via-black/40 to-transparent py-6"
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
@@ -79,7 +92,7 @@ const Navbar = () => {
             href={generateWhatsAppLink(getWhatsAppMessage("ORDER"))}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-orange-600 hover:bg-orange-500 text-white px-6 py-2 rounded-full font-bold transition-all transform hover:scale-105"
+            className="bg-orange-600 hover:bg-orange-700 text-white hover:text-white hover:text-opacity-100 px-6 py-2 rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(234,88,12,0.3)] hover:shadow-[0_0_20px_rgba(234,88,12,0.5)]"
           >
             PEDIR AHORA
           </a>
@@ -112,7 +125,7 @@ const Navbar = () => {
             href={generateWhatsAppLink(getWhatsAppMessage("ORDER"))}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-orange-600 text-white px-6 py-3 rounded-full font-bold transition-all transform hover:scale-105 text-center uppercase mt-4"
+            className="bg-orange-600 hover:bg-orange-700 text-white hover:text-white hover:text-opacity-100 px-6 py-3 rounded-full font-bold transition-all transform hover:scale-105 text-center uppercase mt-4 shadow-[0_0_15px_rgba(234,88,12,0.3)] hover:shadow-[0_0_20px_rgba(234,88,12,0.5)]"
             onClick={() => setIsOpen(false)}
           >
             PEDIR AHORA

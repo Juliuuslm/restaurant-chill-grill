@@ -39,6 +39,7 @@ const Philosophy = () => {
                 src="/images/philosophy/philosophy.jpg"
                 alt="Chef - MASTERS OF FIRE"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
                 quality={85}
               />
