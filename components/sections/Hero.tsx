@@ -157,10 +157,8 @@ const Hero = () => {
           <div className="hero-ctas flex flex-col sm:flex-row gap-4 justify-center items-center will-change-transform">
             <a
               href="#menu"
-              className="group relative bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-base sm:text-lg tracking-wide overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] flex items-center gap-2 shadow-[0_0_20px_rgba(234,88,12,0.4)] hover:shadow-[0_0_30px_rgba(234,88,12,0.6)] hover:scale-105 ring-2 ring-orange-500/20"
+              className="group relative bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full font-bold text-base sm:text-lg tracking-wide overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] flex items-center gap-2 shadow-[0_0_20px_rgba(234,88,12,0.4)] hover:shadow-[0_0_30px_rgba(234,88,12,0.6)] hover:scale-105 ring-2 ring-orange-500/20"
             >
-              {/* Ripple background */}
-              <span className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               {/* Content */}
               <span className="relative flex items-center gap-2">
                 VER EL MENÚ
