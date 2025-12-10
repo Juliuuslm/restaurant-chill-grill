@@ -54,13 +54,13 @@ const TheHype = () => {
                 href={generateWhatsAppLink(getWhatsAppMessage("REVIEW"))}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative px-6 py-3 rounded-full font-bold text-sm tracking-wide text-white border border-white/20 overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:border-orange-500/50 hover:shadow-[0_0_25px_rgba(234,88,12,0.3)]"
+                className="group relative px-6 py-3 rounded-full font-bold text-sm tracking-wide text-white border border-white/20 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:rounded-full hover:border-orange-500/50 hover:shadow-[0_0_25px_rgba(234,88,12,0.3)]"
               >
                 {/* Animated background */}
-                <span className="absolute inset-0 bg-white scale-0 group-hover:scale-100 transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]" />
+                <span className="absolute inset-0 rounded-full bg-white scale-0 group-hover:scale-100 transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]" />
 
                 {/* Shine effect */}
-                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+                <span className="absolute inset-0 rounded-full -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
                 {/* Content */}
                 <span className="relative group-hover:text-black transition-colors duration-300">
