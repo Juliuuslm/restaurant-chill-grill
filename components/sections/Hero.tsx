@@ -107,6 +107,9 @@ const Hero = () => {
         {/* Overlay base para garantizar contraste de texto */}
         <div className="absolute inset-0 bg-neutral-950/30 z-[1]" />
 
+        {/* Degradado direccional para proteger texto (izquierda más oscura) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent z-[1]" />
+
         {/* Radial spotlight effect - subtle center glow */}
         <div className="absolute inset-0 z-[1]">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-radial from-orange-500/5 via-orange-600/2 to-transparent animate-pulse-glow opacity-60" />
@@ -130,7 +133,7 @@ const Hero = () => {
         className="container mx-auto px-6 relative z-10 text-center will-change-transform"
       >
         <Reveal direction="down">
-          <span className="hero-label inline-block py-2 px-4 border border-orange-500/50 rounded-full text-orange-400 text-xs font-bold tracking-[0.2em] mb-8 uppercase bg-orange-500/5 backdrop-blur-sm hover:bg-orange-500/10 hover:border-orange-400 transition-all duration-300 will-change-transform">
+          <span className="hero-label inline-block py-2 px-4 border border-orange-400 rounded-full text-orange-400 text-xs font-bold tracking-[0.2em] mb-8 uppercase bg-orange-500/15 backdrop-blur-sm hover:bg-orange-500/20 hover:border-orange-300 transition-all duration-300 will-change-transform shadow-[0_0_10px_rgba(251,146,60,0.2)]">
             Est. 2024 - Grill & Chill
           </span>
         </Reveal>
@@ -138,7 +141,7 @@ const Hero = () => {
         <Reveal delay={200}>
           <h1 className="hero-title text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.9] mb-6 md:mb-8 will-change-transform [text-shadow:_0_2px_8px_rgb(0_0_0_/_90%),_0_4px_16px_rgb(0_0_0_/_70%)]">
             GRILL <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-orange-400 to-yellow-500 [filter:_drop-shadow(0_2px_8px_rgb(0_0_0_/_100%))_drop-shadow(0_4px_16px_rgb(0_0_0_/_80%))]">
+            <span className="text-orange-600 [filter:_drop-shadow(0_2px_8px_rgb(0_0_0_/_100%))_drop-shadow(0_4px_16px_rgb(0_0_0_/_80%))]">
               & CHILL.
             </span>
           </h1>
@@ -154,7 +157,7 @@ const Hero = () => {
           <div className="hero-ctas flex flex-col sm:flex-row gap-4 justify-center items-center will-change-transform">
             <a
               href="#menu"
-              className="group relative bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-base sm:text-lg tracking-wide overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] flex items-center gap-2 shadow-glow-md hover:shadow-glow-lg hover:scale-105"
+              className="group relative bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-base sm:text-lg tracking-wide overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] flex items-center gap-2 shadow-[0_0_20px_rgba(234,88,12,0.4)] hover:shadow-[0_0_30px_rgba(234,88,12,0.6)] hover:scale-105 ring-2 ring-orange-500/20"
             >
               {/* Ripple background */}
               <span className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -168,7 +171,7 @@ const Hero = () => {
               href={generateWhatsAppLink(getWhatsAppMessage("RESERVATION"))}
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-8 py-4 rounded-full font-bold text-base sm:text-lg text-white border-2 border-white/30 hover:border-orange-500 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] backdrop-blur-md hover:bg-orange-500/10 hover:shadow-glow-md"
+              className="group px-8 py-4 rounded-full font-bold text-base sm:text-lg text-white border-2 border-white/50 hover:border-white hover:bg-white hover:text-neutral-900 transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] backdrop-blur-md"
             >
               RESERVAR MESA
             </a>
