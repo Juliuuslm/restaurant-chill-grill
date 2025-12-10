@@ -99,6 +99,7 @@ const Hero = () => {
           src="/images/hero/hero.jpg"
           alt="Hero Background"
           fill
+          sizes="100vw"
           className="absolute inset-0 object-cover"
           priority
           quality={85}

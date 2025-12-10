@@ -268,6 +268,7 @@ const MenuSection = () => {
                         src={item.img}
                         alt={item.name}
                         fill
+                        sizes="(max-width: 640px) 100vw, 40vw"
                         className="object-cover"
                         quality={85}
                       />

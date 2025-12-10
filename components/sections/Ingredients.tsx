@@ -131,6 +131,7 @@ const Ingredients = () => {
                   src="/images/ingredients/menu-ingre1.jpg"
                   alt="Ingrediente Premium 1"
                   fill
+                  sizes="(max-width: 1024px) 0px, 33vw"
                   className="object-cover"
                   quality={85}
                 />
@@ -147,6 +148,7 @@ const Ingredients = () => {
                   src="/images/ingredients/menu-ingre2.jpg"
                   alt="Ingrediente Premium 2"
                   fill
+                  sizes="(max-width: 1024px) 0px, 40vw"
                   className="object-cover"
                   quality={85}
                 />
