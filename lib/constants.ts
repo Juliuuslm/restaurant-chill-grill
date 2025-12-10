@@ -1,5 +1,5 @@
 // WhatsApp configuration
-export const WHATSAPP_PHONE = "5215512345678"; // Número de WhatsApp sin el + inicial
+export const WHATSAPP_PHONE = "5255745333388"; // Número de WhatsApp sin el + inicial
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}`;
 
 // WhatsApp messages for different CTAs
@@ -21,7 +21,7 @@ export const RESTAURANT_INFO = {
     friday: "13:00 - 01:00", // Viernes y Sábado
     sunday: "13:00 - 22:00",
   },
-  email: "info@grillchill.mx",
+  email: "contacto@aurora33.org",
   year: 2024,
 };
 
