@@ -20,18 +20,29 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      // Track active section
+      // Track active section - find which section is most visible in viewport
       const sections = navItems.map((item) => item.href.slice(1));
+      let activeSectionId = "";
+      let smallestDistance = Infinity;
+
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
         if (el) {
           const rect = el.getBoundingClientRect();
-          // If section is in viewport (with offset for navbar)
-          if (rect.top <= 100 && rect.bottom > 100) {
-            setActiveSection(sectionId);
-            break;
+          // If section is visible in viewport (partially or fully)
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            // Find which section is closest to the viewport top (accounting for navbar offset)
+            const distance = Math.abs(rect.top - 100);
+            if (distance < smallestDistance) {
+              smallestDistance = distance;
+              activeSectionId = sectionId;
+            }
           }
         }
+      }
+
+      if (activeSectionId) {
+        setActiveSection(activeSectionId);
       }
     };
 
