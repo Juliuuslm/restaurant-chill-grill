@@ -2,7 +2,6 @@
 
 import { useEffect, useState, useRef } from "react";
 import { MessageCircle } from "lucide-react";
-import { WHATSAPP_URL, WHATSAPP_MESSAGES } from "@/lib/constants";
 
 const WhatsAppButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -80,7 +79,7 @@ const WhatsAppButton = () => {
 
   return (
     <a
-      href={`${WHATSAPP_URL}?text=${encodeURIComponent(WHATSAPP_MESSAGES.GENERAL)}`}
+      href="https://aurora33.org"
       target="_blank"
       rel="noopener noreferrer"
       className={`

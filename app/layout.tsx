@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_MX",
-    url: "https://grillchill.mx",
+    url: "https://aurora33.org",
     siteName: "GRILL & CHILL",
     title: "GRILL & CHILL | Hamburguesas y Hot Dogs Gourmet",
     description:

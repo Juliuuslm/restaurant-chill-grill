@@ -21,7 +21,7 @@ export const RESTAURANT_INFO = {
     friday: "13:00 - 01:00", // Viernes y Sábado
     sunday: "13:00 - 22:00",
   },
-  email: "contacto@aurora33.org",
+  email: "hola@aurora33.org",
   year: 2024,
 };
 
