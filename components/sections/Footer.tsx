@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Clock, ChevronRight, Instagram, Twitter, Facebook, Flame } from "lucide-react";
+import { MapPin, Clock, Mail, ChevronRight, Instagram, Twitter, Facebook, Flame } from "lucide-react";
 import { RESTAURANT_INFO, SOCIAL_LINKS } from "@/lib/constants";
 import Reveal from "@/components/ui/Reveal";
 
@@ -16,11 +16,11 @@ const Footer = () => {
       className="bg-black pt-24 pb-12 border-t border-neutral-900"
     >
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-12 mb-16">
+        <div className="grid md:grid-cols-4 gap-8 md:gap-12 mb-16">
           {/* Brand Section */}
           <Reveal delay={0} direction="left">
             <div className="col-span-1 md:col-span-2">
-              <div className="text-3xl font-black tracking-tighter text-white flex items-center gap-2 mb-6">
+              <div className="text-xl sm:text-2xl md:text-3xl font-black tracking-tighter text-white flex items-center gap-2 mb-6">
                 <Flame className="text-orange-500 fill-orange-500" />
                 GRILL & CHILL.
               </div>
@@ -76,6 +76,18 @@ const Footer = () => {
                     <p>Dom: {RESTAURANT_INFO.hours.sunday}</p>
                   </div>
                 </div>
+                <div className="flex gap-3 text-neutral-400">
+                  <Mail
+                    className="text-orange-500 shrink-0"
+                    size={20}
+                  />
+                  <a
+                    href={`mailto:${RESTAURANT_INFO.email}`}
+                    className="hover:text-orange-500 transition-colors duration-300"
+                  >
+                    {RESTAURANT_INFO.email}
+                  </a>
+                </div>
               </div>
             </div>
           </Reveal>
@@ -110,7 +122,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-neutral-900 pt-8 flex flex-col md:flex-row justify-between items-center text-neutral-600 text-sm">
-          <p>Copyright © {RESTAURANT_INFO.year} GRILL & CHILL. Built with love and AI by <span className="text-orange-500 font-semibold">aurora33</span></p>
+          <p>Copyright © {RESTAURANT_INFO.year} GRILL & CHILL. Built with love and AI by <a href="https://aurora33.org" target="_blank" rel="noopener noreferrer" className="text-orange-500 font-semibold hover:underline">aurora33</a></p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a
               href="#"

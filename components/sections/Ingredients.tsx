@@ -89,9 +89,9 @@ const Ingredients = () => {
       className="py-24 bg-neutral-950 overflow-hidden"
     >
       <div className="container mx-auto px-6 relative">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <Reveal>
-            <h2 className="text-5xl md:text-7xl font-black text-white mb-8 leading-tight">
+            <h2 className="text-3xl sm:text-5xl md:text-7xl font-black text-white mb-8 leading-tight">
               FRESHNESS <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-600 animate-pulse-slow">
                 OBSESSION

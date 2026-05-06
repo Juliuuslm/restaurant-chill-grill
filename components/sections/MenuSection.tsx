@@ -204,7 +204,7 @@ const MenuSection = () => {
               Nuestra Selección
               <span className="w-8 h-[1px] bg-orange-500"></span>
             </h2>
-            <h3 className="text-5xl md:text-7xl font-black text-white tracking-tighter">
+            <h3 className="text-3xl sm:text-5xl md:text-7xl font-black text-white tracking-tighter">
               THE LINEUP
             </h3>
           </div>
@@ -219,7 +219,7 @@ const MenuSection = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`group relative flex items-center gap-2 px-6 py-3 rounded-full font-bold text-sm tracking-wide border overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
+                  className={`group relative flex items-center gap-2 px-3 sm:px-6 py-2 sm:py-3 rounded-full font-bold text-sm tracking-wide border overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
                     activeTab === tab.id
                       ? "bg-orange-600 text-white border-orange-600 shadow-[0_0_20px_rgba(234,88,12,0.4)] scale-105"
                       : "bg-neutral-800 text-neutral-400 border-white/10 hover:bg-neutral-700 hover:text-orange-400 hover:border-orange-500/30"
@@ -247,7 +247,7 @@ const MenuSection = () => {
           </div>
         </Reveal>
 
-        <div className="grid md:grid-cols-2 gap-8 min-h-[600px]">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           {menuData[activeTab].map((item, idx) => (
             <Reveal
               key={`${activeTab}-${idx}`}
@@ -262,7 +262,7 @@ const MenuSection = () => {
                   className="flex flex-col sm:flex-row h-full cursor-pointer"
                 >
                   {/* Product Image */}
-                  <div className="sm:w-2/5 h-64 sm:h-auto overflow-hidden relative bg-neutral-950">
+                  <div className="sm:w-2/5 h-44 sm:h-auto overflow-hidden relative bg-neutral-950">
                     {item.img ? (
                       <Image
                         src={item.img}
@@ -292,9 +292,9 @@ const MenuSection = () => {
                   </div>
 
                   {/* Content Side */}
-                  <div className="sm:w-3/5 p-8 flex flex-col justify-between relative z-20">
+                  <div className="sm:w-3/5 p-4 sm:p-6 md:p-8 flex flex-col justify-between relative z-20">
                     <div>
-                      <h4 className="text-3xl font-black text-white mb-2 uppercase italic tracking-tight group-hover:text-orange-500 transition-colors duration-300">
+                      <h4 className="text-xl sm:text-2xl md:text-3xl font-black text-white mb-2 uppercase italic tracking-tight group-hover:text-orange-500 transition-colors duration-300">
                         {item.name}
                       </h4>
                       <div className="h-1 w-12 bg-orange-500 mb-4 transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
@@ -308,7 +308,7 @@ const MenuSection = () => {
                         <span className="text-xs text-neutral-500 uppercase tracking-widest mb-1">
                           Precio
                         </span>
-                        <span className="text-3xl font-black text-white tracking-tighter">
+                        <span className="text-2xl sm:text-3xl font-black text-white tracking-tighter">
                           {item.price}
                         </span>
                       </div>

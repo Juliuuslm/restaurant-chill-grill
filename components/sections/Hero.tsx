@@ -138,7 +138,7 @@ const Hero = () => {
         </span>
 
         <Reveal delay={200}>
-          <h1 className="hero-title text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.9] mb-6 md:mb-8 will-change-transform [text-shadow:_0_2px_8px_rgb(0_0_0_/_90%),_0_4px_16px_rgb(0_0_0_/_70%)]">
+          <h1 className="hero-title text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.9] mb-6 md:mb-8 will-change-transform [text-shadow:_0_2px_8px_rgb(0_0_0_/_90%),_0_4px_16px_rgb(0_0_0_/_70%)]">
             GRILL <br />
             <span className="text-orange-600 [filter:_drop-shadow(0_2px_8px_rgb(0_0_0_/_100%))_drop-shadow(0_4px_16px_rgb(0_0_0_/_80%))]">
               & CHILL.
@@ -177,7 +177,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator - subtle animation */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce">
         <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2">
           <div className="w-1 h-3 bg-orange-500 rounded-full animate-float" />
         </div>
