@@ -144,9 +144,18 @@ export const createTextReveal = (
 
     const chars = isChars ? text.split("") : isWords ? text.split(" ") : [text];
 
-    element.innerHTML = chars
-      .map((char) => `<span class="char">${char === " " ? "&nbsp;" : char}</span>`)
-      .join("");
+    const fragment = document.createDocumentFragment();
+    chars.forEach((char) => {
+      const span = document.createElement("span");
+      span.className = "char";
+      if (char === " ") {
+        span.innerHTML = "&nbsp;";
+      } else {
+        span.textContent = char;
+      }
+      fragment.appendChild(span);
+    });
+    element.replaceChildren(fragment);
 
     gsap.fromTo(
       `${selector} .char`,
